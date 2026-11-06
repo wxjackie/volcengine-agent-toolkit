@@ -19,12 +19,16 @@
     "supabase",
     "aidap",
     "baas",
-    "volcengine-db-supabase"
+    "redis",
+    "缓存",
+    "cache",
+    "volcengine-db-supabase",
+    "volcengine-redis"
   ],
   "skills": "./skills/",
   "interface": {
     "displayName": "Volcengine Database",
-    "shortDescription": "Operate Volcengine AI-native BaaS and PostgreSQL",
+    "shortDescription": "Operate Volcengine Redis and AI-native BaaS",
     "longDescription": "Build and operate database-backed applications on Volcengine managed database platforms.",
     "developerName": "Volcengine Team",
     "category": "Cloud",

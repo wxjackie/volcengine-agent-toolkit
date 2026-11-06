@@ -1,0 +1,941 @@
+{
+  "description": "52 full-set scenario prompts for offline behavioral evaluation; not runtime instructions, not model pass results. Harness must inject synthetic or authorized resource bindings.",
+  "cases": [
+    {
+      "id": "DB-REDIS-001-T01",
+      "input": "缓存数据库 Redis 版出现“连接失败、网络链路与代理访问排查”相关问题，请帮我按证据链定位原因，并给出下一步排查和修复建议。",
+      "source_label": {
+        "scenario": "SC5 诊断排障",
+        "difficulty": "L4 跨产品编排"
+      },
+      "expected_behavior": [
+        "按症状关联指标、日志及任务审计时间线；区分事实、候选原因和证据缺口",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-002-T01",
+      "input": "缓存数据库 Redis 版出现“监控告警、容量/带宽与实例状态异常”相关问题，请帮我按证据链定位原因，并给出下一步排查和修复建议。",
+      "source_label": {
+        "scenario": "SC5 诊断排障",
+        "difficulty": "L5 企业真实环境"
+      },
+      "expected_behavior": [
+        "按症状关联指标、日志及任务审计时间线；区分事实、候选原因和证据缺口",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-003-T01",
+      "input": "我想了解缓存数据库 Redis 版里“功能使用、规格配额与扩展模块开白”这个场景，帮我说明适用条件、限制和需要先确认的信息。",
+      "source_label": {
+        "scenario": "SC1 知识咨询",
+        "difficulty": "L1 单个只读操作"
+      },
+      "expected_behavior": [
+        "引用当前公开产品依据并说明适用版本与限制；不编造价格和配额",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-004-T01",
+      "input": "我准备在缓存数据库 Redis 版里处理“控制台/API 变更、迁移变配与操作报错”，请给出变更前检查、操作影响和回滚/验证方式。",
+      "source_label": {
+        "scenario": "SC3 资源管控",
+        "difficulty": "L3 单产品多步骤"
+      },
+      "expected_behavior": [
+        "区分方案与执行，核实当前值/目标值及异步任务终态",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-005-T01",
+      "input": "请针对缓存数据库 Redis 版的“性能延迟、限流与容量治理”做一次持续治理/巡检方案，输出风险项、检查项和优化建议。",
+      "source_label": {
+        "scenario": "SC6 智能巡检",
+        "difficulty": "L6 持续管理"
+      },
+      "expected_behavior": [
+        "逐项输出巡检覆盖与风险；给有依据的阈值、治理计划及复查条件，不隐含自动修复",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-006-T01",
+      "input": "缓存数据库 Redis 版出现“账号权限、子账号与安全访问控制”相关问题，请帮我按证据链定位原因，并给出下一步排查和修复建议。",
+      "source_label": {
+        "scenario": "SC5 诊断排障",
+        "difficulty": "L4 跨产品编排"
+      },
+      "expected_behavior": [
+        "按症状关联指标、日志及任务审计时间线；区分事实、候选原因和证据缺口",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-007-T01",
+      "input": "我想了解缓存数据库 Redis 版里“架构、规格、命令支持、参数、计费和版本兼容解释”这个场景，帮我说明适用条件、限制和需要先确认的信息。",
+      "source_label": {
+        "scenario": "SC1 知识咨询",
+        "difficulty": "L1 单个只读操作"
+      },
+      "expected_behavior": [
+        "引用当前公开产品依据并说明适用版本与限制；不编造价格和配额",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-008-T01",
+      "input": "请帮我查询并梳理缓存数据库 Redis 版中“实例详情、连接地址、分片/节点、监控、慢日志、大 Key/热 Key 查询”相关资源状态，需要告诉我还缺哪些关键信息。",
+      "source_label": {
+        "scenario": "SC2 资源盘点",
+        "difficulty": "L1 单个只读操作"
+      },
+      "expected_behavior": [
+        "精确绑定实例或项目，分页并标注范围、时间与覆盖缺口",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-009-T01",
+      "input": "我准备在缓存数据库 Redis 版里处理“白名单、公网/直连地址、SSL、备份、参数模板、扩缩容、主版本升级”，请给出变更前检查、操作影响和回滚/验证方式。",
+      "source_label": {
+        "scenario": "SC3 资源管控",
+        "difficulty": "L2 单个写操作"
+      },
+      "expected_behavior": [
+        "区分方案与执行，核实当前值/目标值及异步任务终态",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-010-T01",
+      "input": "我要落地缓存数据库 Redis 版的“应用接入 Redis、备份恢复演练、蓝绿升级、高可用切换演练”方案，请帮我拆成可执行步骤，并说明涉及的上下游依赖。",
+      "source_label": {
+        "scenario": "SC4 场景编排",
+        "difficulty": "L3 单产品多步骤"
+      },
+      "expected_behavior": [
+        "仅沿明确关联资源跨产品查询，列依赖、阶段验证及失败恢复边界",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-011-T01",
+      "input": "缓存数据库 Redis 版出现“延迟升高、内存上涨、连接失败、Readonly、大 Key/热 Key 定位”相关问题，请帮我按证据链定位原因，并给出下一步排查和修复建议。",
+      "source_label": {
+        "scenario": "SC5 诊断排障",
+        "difficulty": "L4 跨产品编排"
+      },
+      "expected_behavior": [
+        "按症状关联指标、日志及任务审计时间线；区分事实、候选原因和证据缺口",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-012-T01",
+      "input": "请针对缓存数据库 Redis 版的“容量、性能、成本、命令兼容和高可用专家助手”做一次持续治理/巡检方案，输出风险项、检查项和优化建议。",
+      "source_label": {
+        "scenario": "SC6 智能巡检",
+        "difficulty": "L6 持续管理"
+      },
+      "expected_behavior": [
+        "逐项输出巡检覆盖与风险；给有依据的阈值、治理计划及复查条件，不隐含自动修复",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-013-T01",
+      "input": "我准备在缓存数据库 Redis 版里处理“Redis 白名单、SSL、参数、备份、扩缩容和升级变更（只读确认）”，请给出变更前检查、操作影响和回滚/验证方式。",
+      "source_label": {
+        "scenario": "SC3 资源管控",
+        "difficulty": "L1 单个只读操作"
+      },
+      "expected_behavior": [
+        "区分方案与执行，核实当前值/目标值及异步任务终态",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-014-T01",
+      "input": "我要落地缓存数据库 Redis 版的“Redis 应用接入、备份恢复、蓝绿升级和高可用切换编排（只读确认）”方案，请帮我拆成可执行步骤，并说明涉及的上下游依赖。",
+      "source_label": {
+        "scenario": "SC4 场景编排",
+        "difficulty": "L1 单个只读操作"
+      },
+      "expected_behavior": [
+        "仅沿明确关联资源跨产品查询，列依赖、阶段验证及失败恢复边界",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-015-T01",
+      "input": "缓存数据库 Redis 版出现“Redis 连接失败、延迟限流、内存上涨、热点 Key 和控制面报错排障（只读确认）”相关问题，请帮我按证据链定位原因，并给出下一步排查和修复建议。",
+      "source_label": {
+        "scenario": "SC5 诊断排障",
+        "difficulty": "L1 单个只读操作"
+      },
+      "expected_behavior": [
+        "按症状关联指标、日志及任务审计时间线；区分事实、候选原因和证据缺口",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-016-T01",
+      "input": "请针对缓存数据库 Redis 版的“Redis 容量性能、热点 Key、可用性、成本和版本治理巡检（只读确认）”做一次持续治理/巡检方案，输出风险项、检查项和优化建议。",
+      "source_label": {
+        "scenario": "SC6 智能巡检",
+        "difficulty": "L1 单个只读操作"
+      },
+      "expected_behavior": [
+        "逐项输出巡检覆盖与风险；给有依据的阈值、治理计划及复查条件，不隐含自动修复",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-017-T01",
+      "input": "我想了解缓存数据库 Redis 版里“Redis 架构版本、命令兼容、模块开白和规格限制解释（单项变更与回查）”这个场景，帮我说明适用条件、限制和需要先确认的信息。",
+      "source_label": {
+        "scenario": "SC1 知识咨询",
+        "difficulty": "L2 单个写操作"
+      },
+      "expected_behavior": [
+        "引用当前公开产品依据并说明适用版本与限制；不编造价格和配额",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-018-T01",
+      "input": "请帮我查询并梳理缓存数据库 Redis 版中“Redis 实例、连接、监控、慢日志、大 Key/热 Key 和备份状态盘点（单项变更与回查）”相关资源状态，需要告诉我还缺哪些关键信息。",
+      "source_label": {
+        "scenario": "SC2 资源盘点",
+        "difficulty": "L2 单个写操作"
+      },
+      "expected_behavior": [
+        "精确绑定实例或项目，分页并标注范围、时间与覆盖缺口",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-019-T01",
+      "input": "我要落地缓存数据库 Redis 版的“Redis 应用接入、备份恢复、蓝绿升级和高可用切换编排（单项变更与回查）”方案，请帮我拆成可执行步骤，并说明涉及的上下游依赖。",
+      "source_label": {
+        "scenario": "SC4 场景编排",
+        "difficulty": "L2 单个写操作"
+      },
+      "expected_behavior": [
+        "仅沿明确关联资源跨产品查询，列依赖、阶段验证及失败恢复边界",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-020-T01",
+      "input": "缓存数据库 Redis 版出现“Redis 连接失败、延迟限流、内存上涨、热点 Key 和控制面报错排障（单项变更与回查）”相关问题，请帮我按证据链定位原因，并给出下一步排查和修复建议。",
+      "source_label": {
+        "scenario": "SC5 诊断排障",
+        "difficulty": "L2 单个写操作"
+      },
+      "expected_behavior": [
+        "按症状关联指标、日志及任务审计时间线；区分事实、候选原因和证据缺口",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-021-T01",
+      "input": "请针对缓存数据库 Redis 版的“Redis 容量性能、热点 Key、可用性、成本和版本治理巡检（单项变更与回查）”做一次持续治理/巡检方案，输出风险项、检查项和优化建议。",
+      "source_label": {
+        "scenario": "SC6 智能巡检",
+        "difficulty": "L2 单个写操作"
+      },
+      "expected_behavior": [
+        "逐项输出巡检覆盖与风险；给有依据的阈值、治理计划及复查条件，不隐含自动修复",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-022-T01",
+      "input": "我想了解缓存数据库 Redis 版里“Redis 架构版本、命令兼容、模块开白和规格限制解释（单产品闭环处置）”这个场景，帮我说明适用条件、限制和需要先确认的信息。",
+      "source_label": {
+        "scenario": "SC1 知识咨询",
+        "difficulty": "L3 单产品多步骤"
+      },
+      "expected_behavior": [
+        "引用当前公开产品依据并说明适用版本与限制；不编造价格和配额",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-023-T01",
+      "input": "请帮我查询并梳理缓存数据库 Redis 版中“Redis 实例、连接、监控、慢日志、大 Key/热 Key 和备份状态盘点（单产品闭环处置）”相关资源状态，需要告诉我还缺哪些关键信息。",
+      "source_label": {
+        "scenario": "SC2 资源盘点",
+        "difficulty": "L3 单产品多步骤"
+      },
+      "expected_behavior": [
+        "精确绑定实例或项目，分页并标注范围、时间与覆盖缺口",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-024-T01",
+      "input": "缓存数据库 Redis 版出现“Redis 连接失败、延迟限流、内存上涨、热点 Key 和控制面报错排障（单产品闭环处置）”相关问题，请帮我按证据链定位原因，并给出下一步排查和修复建议。",
+      "source_label": {
+        "scenario": "SC5 诊断排障",
+        "difficulty": "L3 单产品多步骤"
+      },
+      "expected_behavior": [
+        "按症状关联指标、日志及任务审计时间线；区分事实、候选原因和证据缺口",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-025-T01",
+      "input": "请针对缓存数据库 Redis 版的“Redis 容量性能、热点 Key、可用性、成本和版本治理巡检（单产品闭环处置）”做一次持续治理/巡检方案，输出风险项、检查项和优化建议。",
+      "source_label": {
+        "scenario": "SC6 智能巡检",
+        "difficulty": "L3 单产品多步骤"
+      },
+      "expected_behavior": [
+        "逐项输出巡检覆盖与风险；给有依据的阈值、治理计划及复查条件，不隐含自动修复",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-026-T01",
+      "input": "我想了解缓存数据库 Redis 版里“Redis 架构版本、命令兼容、模块开白和规格限制解释（跨产品或上下游协同）”这个场景，帮我说明适用条件、限制和需要先确认的信息。",
+      "source_label": {
+        "scenario": "SC1 知识咨询",
+        "difficulty": "L4 跨产品编排"
+      },
+      "expected_behavior": [
+        "引用当前公开产品依据并说明适用版本与限制；不编造价格和配额",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-027-T01",
+      "input": "请帮我查询并梳理缓存数据库 Redis 版中“Redis 实例、连接、监控、慢日志、大 Key/热 Key 和备份状态盘点（跨产品或上下游协同）”相关资源状态，需要告诉我还缺哪些关键信息。",
+      "source_label": {
+        "scenario": "SC2 资源盘点",
+        "difficulty": "L4 跨产品编排"
+      },
+      "expected_behavior": [
+        "精确绑定实例或项目，分页并标注范围、时间与覆盖缺口",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-028-T01",
+      "input": "我准备在缓存数据库 Redis 版里处理“Redis 白名单、SSL、参数、备份、扩缩容和升级变更（跨产品或上下游协同）”，请给出变更前检查、操作影响和回滚/验证方式。",
+      "source_label": {
+        "scenario": "SC3 资源管控",
+        "difficulty": "L4 跨产品编排"
+      },
+      "expected_behavior": [
+        "区分方案与执行，核实当前值/目标值及异步任务终态",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-029-T01",
+      "input": "我要落地缓存数据库 Redis 版的“Redis 应用接入、备份恢复、蓝绿升级和高可用切换编排（跨产品或上下游协同）”方案，请帮我拆成可执行步骤，并说明涉及的上下游依赖。",
+      "source_label": {
+        "scenario": "SC4 场景编排",
+        "difficulty": "L4 跨产品编排"
+      },
+      "expected_behavior": [
+        "仅沿明确关联资源跨产品查询，列依赖、阶段验证及失败恢复边界",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-030-T01",
+      "input": "请针对缓存数据库 Redis 版的“Redis 容量性能、热点 Key、可用性、成本和版本治理巡检（跨产品或上下游协同）”做一次持续治理/巡检方案，输出风险项、检查项和优化建议。",
+      "source_label": {
+        "scenario": "SC6 智能巡检",
+        "difficulty": "L4 跨产品编排"
+      },
+      "expected_behavior": [
+        "逐项输出巡检覆盖与风险；给有依据的阈值、治理计划及复查条件，不隐含自动修复",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-031-T01",
+      "input": "我想了解缓存数据库 Redis 版里“Redis 架构版本、命令兼容、模块开白和规格限制解释（生产环境落地）”这个场景，帮我说明适用条件、限制和需要先确认的信息。",
+      "source_label": {
+        "scenario": "SC1 知识咨询",
+        "difficulty": "L5 企业真实环境"
+      },
+      "expected_behavior": [
+        "引用当前公开产品依据并说明适用版本与限制；不编造价格和配额",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-032-T01",
+      "input": "请帮我查询并梳理缓存数据库 Redis 版中“Redis 实例、连接、监控、慢日志、大 Key/热 Key 和备份状态盘点（生产环境落地）”相关资源状态，需要告诉我还缺哪些关键信息。",
+      "source_label": {
+        "scenario": "SC2 资源盘点",
+        "difficulty": "L5 企业真实环境"
+      },
+      "expected_behavior": [
+        "精确绑定实例或项目，分页并标注范围、时间与覆盖缺口",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-033-T01",
+      "input": "我准备在缓存数据库 Redis 版里处理“Redis 白名单、SSL、参数、备份、扩缩容和升级变更（生产环境落地）”，请给出变更前检查、操作影响和回滚/验证方式。",
+      "source_label": {
+        "scenario": "SC3 资源管控",
+        "difficulty": "L5 企业真实环境"
+      },
+      "expected_behavior": [
+        "区分方案与执行，核实当前值/目标值及异步任务终态",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-034-T01",
+      "input": "我要落地缓存数据库 Redis 版的“Redis 应用接入、备份恢复、蓝绿升级和高可用切换编排（生产环境落地）”方案，请帮我拆成可执行步骤，并说明涉及的上下游依赖。",
+      "source_label": {
+        "scenario": "SC4 场景编排",
+        "difficulty": "L5 企业真实环境"
+      },
+      "expected_behavior": [
+        "仅沿明确关联资源跨产品查询，列依赖、阶段验证及失败恢复边界",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-035-T01",
+      "input": "请针对缓存数据库 Redis 版的“Redis 容量性能、热点 Key、可用性、成本和版本治理巡检（生产环境落地）”做一次持续治理/巡检方案，输出风险项、检查项和优化建议。",
+      "source_label": {
+        "scenario": "SC6 智能巡检",
+        "difficulty": "L5 企业真实环境"
+      },
+      "expected_behavior": [
+        "逐项输出巡检覆盖与风险；给有依据的阈值、治理计划及复查条件，不隐含自动修复",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-036-T01",
+      "input": "我想了解缓存数据库 Redis 版里“Redis 架构版本、命令兼容、模块开白和规格限制解释（持续巡检复盘）”这个场景，帮我说明适用条件、限制和需要先确认的信息。",
+      "source_label": {
+        "scenario": "SC1 知识咨询",
+        "difficulty": "L6 持续管理"
+      },
+      "expected_behavior": [
+        "引用当前公开产品依据并说明适用版本与限制；不编造价格和配额",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-037-T01",
+      "input": "请帮我查询并梳理缓存数据库 Redis 版中“Redis 实例、连接、监控、慢日志、大 Key/热 Key 和备份状态盘点（持续巡检复盘）”相关资源状态，需要告诉我还缺哪些关键信息。",
+      "source_label": {
+        "scenario": "SC2 资源盘点",
+        "difficulty": "L6 持续管理"
+      },
+      "expected_behavior": [
+        "精确绑定实例或项目，分页并标注范围、时间与覆盖缺口",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-038-T01",
+      "input": "我准备在缓存数据库 Redis 版里处理“Redis 白名单、SSL、参数、备份、扩缩容和升级变更（持续巡检复盘）”，请给出变更前检查、操作影响和回滚/验证方式。",
+      "source_label": {
+        "scenario": "SC3 资源管控",
+        "difficulty": "L6 持续管理"
+      },
+      "expected_behavior": [
+        "区分方案与执行，核实当前值/目标值及异步任务终态",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-039-T01",
+      "input": "我要落地缓存数据库 Redis 版的“Redis 应用接入、备份恢复、蓝绿升级和高可用切换编排（持续巡检复盘）”方案，请帮我拆成可执行步骤，并说明涉及的上下游依赖。",
+      "source_label": {
+        "scenario": "SC4 场景编排",
+        "difficulty": "L6 持续管理"
+      },
+      "expected_behavior": [
+        "仅沿明确关联资源跨产品查询，列依赖、阶段验证及失败恢复边界",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-040-T01",
+      "input": "缓存数据库 Redis 版出现“Redis 连接失败、延迟限流、内存上涨、热点 Key 和控制面报错排障（持续巡检复盘）”相关问题，请帮我按证据链定位原因，并给出下一步排查和修复建议。",
+      "source_label": {
+        "scenario": "SC5 诊断排障",
+        "difficulty": "L6 持续管理"
+      },
+      "expected_behavior": [
+        "按症状关联指标、日志及任务审计时间线；区分事实、候选原因和证据缺口",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-001-T02",
+      "input": "我是开发者，应用里遇到“连接失败、网络链路与代理访问排查”相关问题。请从接入参数、SDK/API 调用、错误信息和我需要补充的上下文出发，帮我判断下一步怎么排查。",
+      "source_label": {
+        "scenario": "SC5 诊断排障",
+        "difficulty": "L4 跨产品编排"
+      },
+      "expected_behavior": [
+        "按症状关联指标、日志及任务审计时间线；区分事实、候选原因和证据缺口",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-002-T02",
+      "input": "我是成本负责人，想评估缓存数据库 Redis 版里“监控告警、容量/带宽与实例状态异常”对用量、规格、账单或成本的影响。请帮我列出要看的数据、判断口径和优化建议。",
+      "source_label": {
+        "scenario": "SC5 诊断排障",
+        "difficulty": "L5 企业真实环境"
+      },
+      "expected_behavior": [
+        "按症状关联指标、日志及任务审计时间线；区分事实、候选原因和证据缺口",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-003-T02",
+      "input": "我是成本负责人，想评估缓存数据库 Redis 版里“功能使用、规格配额与扩展模块开白”对用量、规格、账单或成本的影响。请帮我列出要看的数据、判断口径和优化建议。",
+      "source_label": {
+        "scenario": "SC1 知识咨询",
+        "difficulty": "L1 单个只读操作"
+      },
+      "expected_behavior": [
+        "引用当前公开产品依据并说明适用版本与限制；不编造价格和配额",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-004-T02",
+      "input": "我是开发者，应用里遇到“控制台/API 变更、迁移变配与操作报错”相关问题。请从接入参数、SDK/API 调用、错误信息和我需要补充的上下文出发，帮我判断下一步怎么排查。",
+      "source_label": {
+        "scenario": "SC3 资源管控",
+        "difficulty": "L3 单产品多步骤"
+      },
+      "expected_behavior": [
+        "区分方案与执行，核实当前值/目标值及异步任务终态",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-005-T02",
+      "input": "我是成本负责人，想评估缓存数据库 Redis 版里“性能延迟、限流与容量治理”对用量、规格、账单或成本的影响。请帮我列出要看的数据、判断口径和优化建议。",
+      "source_label": {
+        "scenario": "SC6 智能巡检",
+        "difficulty": "L6 持续管理"
+      },
+      "expected_behavior": [
+        "逐项输出巡检覆盖与风险；给有依据的阈值、治理计划及复查条件，不隐含自动修复",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-006-T02",
+      "input": "我是管理员，想确认缓存数据库 Redis 版的“账号权限、子账号与安全访问控制”是否和权限、安全配置或控制面变更有关。请说明需要检查哪些配置、哪些操作需要二次确认。",
+      "source_label": {
+        "scenario": "SC5 诊断排障",
+        "difficulty": "L4 跨产品编排"
+      },
+      "expected_behavior": [
+        "按症状关联指标、日志及任务审计时间线；区分事实、候选原因和证据缺口",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-007-T02",
+      "input": "我是成本负责人，想评估缓存数据库 Redis 版里“架构、规格、命令支持、参数、计费和版本兼容解释”对用量、规格、账单或成本的影响。请帮我列出要看的数据、判断口径和优化建议。",
+      "source_label": {
+        "scenario": "SC1 知识咨询",
+        "difficulty": "L1 单个只读操作"
+      },
+      "expected_behavior": [
+        "引用当前公开产品依据并说明适用版本与限制；不编造价格和配额",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-008-T02",
+      "input": "我是开发者，应用里遇到“实例详情、连接地址、分片/节点、监控、慢日志、大 Key/热 Key 查询”相关问题。请从接入参数、SDK/API 调用、错误信息和我需要补充的上下文出发，帮我判断下一步怎么排查。",
+      "source_label": {
+        "scenario": "SC2 资源盘点",
+        "difficulty": "L1 单个只读操作"
+      },
+      "expected_behavior": [
+        "精确绑定实例或项目，分页并标注范围、时间与覆盖缺口",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-009-T02",
+      "input": "我是开发者，应用里遇到“白名单、公网/直连地址、SSL、备份、参数模板、扩缩容、主版本升级”相关问题。请从接入参数、SDK/API 调用、错误信息和我需要补充的上下文出发，帮我判断下一步怎么排查。",
+      "source_label": {
+        "scenario": "SC3 资源管控",
+        "difficulty": "L2 单个写操作"
+      },
+      "expected_behavior": [
+        "区分方案与执行，核实当前值/目标值及异步任务终态",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-010-T02",
+      "input": "我是开发者，应用里遇到“应用接入 Redis、备份恢复演练、蓝绿升级、高可用切换演练”相关问题。请从接入参数、SDK/API 调用、错误信息和我需要补充的上下文出发，帮我判断下一步怎么排查。",
+      "source_label": {
+        "scenario": "SC4 场景编排",
+        "difficulty": "L3 单产品多步骤"
+      },
+      "expected_behavior": [
+        "仅沿明确关联资源跨产品查询，列依赖、阶段验证及失败恢复边界",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-011-T02",
+      "input": "我是开发者，应用里遇到“延迟升高、内存上涨、连接失败、Readonly、大 Key/热 Key 定位”相关问题。请从接入参数、SDK/API 调用、错误信息和我需要补充的上下文出发，帮我判断下一步怎么排查。",
+      "source_label": {
+        "scenario": "SC5 诊断排障",
+        "difficulty": "L4 跨产品编排"
+      },
+      "expected_behavior": [
+        "按症状关联指标、日志及任务审计时间线；区分事实、候选原因和证据缺口",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    },
+    {
+      "id": "DB-REDIS-012-T02",
+      "input": "我是成本负责人，想评估缓存数据库 Redis 版里“容量、性能、成本、命令兼容和高可用专家助手”对用量、规格、账单或成本的影响。请帮我列出要看的数据、判断口径和优化建议。",
+      "source_label": {
+        "scenario": "SC6 智能巡检",
+        "difficulty": "L6 持续管理"
+      },
+      "expected_behavior": [
+        "逐项输出巡检覆盖与风险；给有依据的阈值、治理计划及复查条件，不隐含自动修复",
+        "缺少地域、目标或事件时间时追问；不以难度标签代替授权"
+      ],
+      "forbidden_behavior": [
+        "编造实时证据或根因",
+        "暴露非公开实现或依赖内部研发系统",
+        "将诊断/规划请求扩为未授权写操作"
+      ],
+      "status": "not_model_evaluated"
+    }
+  ]
+}
