@@ -156,16 +156,59 @@
       "domain_en": "Database",
       "default": false,
       "description": "Build and operate database-backed applications on Volcengine managed database platforms.",
-      "short_description": "Operate Volcengine AI-native BaaS and PostgreSQL",
-      "keywords": ["数据库", "database", "postgresql", "supabase", "aidap", "baas"],
-      "default_prompts": ["Create and configure a Volcengine Supabase workspace."],
+      "short_description": "Operate Volcengine Redis and AI-native BaaS",
+      "keywords": [
+        "数据库",
+        "database",
+        "postgresql",
+        "supabase",
+        "aidap",
+        "baas",
+        "redis",
+        "缓存",
+        "cache"
+      ],
+      "default_prompts": [
+        "Create and configure a Volcengine Supabase workspace."
+      ],
       "skills": [
         {
           "name": "volcengine-db-supabase",
           "path": "plugins/volcengine-database/skills/volcengine-db-supabase",
           "summary": "Manage Volcengine AI-native BaaS Supabase workspaces, SQL, Auth, Realtime, and Edge Functions.",
           "summary_zh": "管理火山引擎 AI 原生 BaaS Supabase 工作区、SQL、Auth、Realtime 与 Edge Functions。",
-          "keywords": ["supabase", "aidap", "postgresql", "baas", "auth", "realtime", "edge functions", "数据库"]
+          "keywords": [
+            "supabase",
+            "aidap",
+            "postgresql",
+            "baas",
+            "auth",
+            "realtime",
+            "edge functions",
+            "数据库"
+          ]
+        },
+        {
+          "name": "volcengine-redis",
+          "path": "plugins/volcengine-database/skills/volcengine-redis",
+          "summary": "Inspect managed Redis, diagnose incidents with public metrics and logs, audit drift, and plan or execute authorized changes.",
+          "summary_zh": "查询与巡检托管 Redis，结合云监控、慢日志、大热 Key 和操作审计诊断，核验漂移并执行已授权变更。",
+          "keywords": [
+            "redis",
+            "缓存",
+            "cache",
+            "白名单",
+            "备份恢复",
+            "分片",
+            "热key",
+            "慢日志",
+            "云监控",
+            "操作审计",
+            "巡检",
+            "诊断",
+            "大key",
+            "变配"
+          ]
         }
       ]
     },

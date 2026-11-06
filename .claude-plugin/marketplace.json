@@ -88,7 +88,11 @@
         "supabase",
         "aidap",
         "baas",
-        "volcengine-db-supabase"
+        "redis",
+        "缓存",
+        "cache",
+        "volcengine-db-supabase",
+        "volcengine-redis"
       ],
       "category": "database"
     },

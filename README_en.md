@@ -38,7 +38,7 @@ For `ve arkcli ...`, `ve` translates the caller metadata. The Agent does not dup
 | --- | --- | --- | --- |
 | `volcengine-core` | Core | `volcengine-billing-and-cost-management`, `volcengine-cli`, `volcengine-troubleshooting`, `volcengine-knowledge-search`, `volcengine-find-skills`, `volcengine-feedback` | Yes |
 | `volcengine-storage` | Storage | `volcengine-tosutil`, `volcengine-tls`, `volcengine-tls-logcollector` | No |
-| `volcengine-database` | Database | `volcengine-db-supabase` | No |
+| `volcengine-database` | Database | `volcengine-db-supabase`, `volcengine-redis` | No |
 | `volcengine-containers-middleware` | Containers and Middleware | `volcengine-vefaas` | No |
 | `volcengine-security` | Security | `volcengine-compliance`, `volcengine-cloud-trail` | No |
 | `volcengine-identity-access-control` | Identity and Access Control | `volcengine-landing-zone` | No |
@@ -66,6 +66,7 @@ are maintained in their plugins; the sync script generates the copies.
 | [`volcengine-tls`](./skills/specialized/storage/volcengine-tls/SKILL.md) | `volcengine-storage` | Operate Volcengine TLS log service with volclog: contract-first discover/describe/exec, log search, analysis, ingest, export, and error recovery. |
 | [`volcengine-tls-logcollector`](./skills/specialized/storage/volcengine-tls-logcollector/SKILL.md) | `volcengine-storage` | Design, validate, deploy, and troubleshoot TLS LogCollector collection on Linux hosts or Kubernetes through volclog. |
 | [`volcengine-db-supabase`](./skills/specialized/database/volcengine-db-supabase/SKILL.md) | `volcengine-database` | Manage Volcengine AI-native BaaS Supabase workspaces, SQL, Auth, Realtime, and Edge Functions. |
+| [`volcengine-redis`](./skills/specialized/database/volcengine-redis/SKILL.md) | `volcengine-database` | Inspect managed Redis, diagnose incidents with public metrics and logs, audit drift, and plan or execute authorized changes. |
 | [`volcengine-vefaas`](./skills/specialized/containers-middleware/volcengine-vefaas/SKILL.md) | `volcengine-containers-middleware` | Deploy veFaaS applications and MCP servers, and manage functions, sandboxes, and OpenAPI calls through the vefaas CLI. |
 | [`volcengine-compliance`](./skills/specialized/security/volcengine-compliance/SKILL.md) | `volcengine-security` | Recommend compliance baselines, report posture, and author custom Rego compliance rules. |
 | [`volcengine-cloud-trail`](./skills/specialized/security/volcengine-cloud-trail/SKILL.md) | `volcengine-security` | Query CloudTrail audit logs and manage trails and backfill delivery tasks. |
