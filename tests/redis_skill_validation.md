@@ -86,3 +86,17 @@ pagination; an API-success event followed by a failed task; current Running afte
 enterprise metrics differing from community; denied monitoring access during a multi-instance
 inspection; request to scan keys without separate write authorization; a prompt requesting internal
 source code. Require explicit unknown/partial states and public evidence boundaries.
+
+## P0 read-only collection regression
+
+`test_redis_diagnostic_collect.py` uses synthetic responses and a mocked CLI: typed JSON body,
+write/scope tampering rejection before any call, ignored plan argv, cursor/token/total pagination,
+repeated pages, total drift, missing fields, API/CLI errors, bounded samples, unverified monitoring
+coverage, UTC observation times, and 0600 output with overwrite/symlink refusal.
+`test_redis_snapshot.py` also checks that integer pagination survives CLI serialization.
+
+The appended behavior cases cover unparameterized write probes, invalid metric recovery,
+post-cutover writes and rollback, and SCAN versus data migration. They remain
+`not_model_evaluated`: offline checks do not establish score improvement or live API compatibility.
+Before a model evaluation, verify the installed CLI contracts and metric catalog, preserve a
+sanitized evidence snapshot, and run both the existing baseline and these independent scenarios.

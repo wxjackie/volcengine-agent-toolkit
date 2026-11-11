@@ -136,9 +136,8 @@ def ve_fetch(region, timeout):
     if env.get('VE_CALLER_TYPE') != 'ai_agent' or not env.get('VE_CALLER_NAME') or env.get('VE_SKILL_NAME') != 'volcengine-redis':
         raise EvidenceError('set VE_CALLER_TYPE=ai_agent, actual VE_CALLER_NAME, VE_SKILL_NAME=volcengine-redis')
     def fetch(params):
-        cmd = ['ve', 'redis', 'DescribeDBInstances', '--region', region, '--output', 'json']
-        for key, value in params.items():
-            cmd.extend(['--' + key, str(value)])
+        cmd = ['ve', 'redis', 'DescribeDBInstances', '--region', region,
+               '--body', json.dumps(params), '--output', 'json']
         response = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout,
                                   env=env, stdin=subprocess.DEVNULL, check=False)
         if response.returncode:

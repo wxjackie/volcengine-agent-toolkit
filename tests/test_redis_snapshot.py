@@ -99,7 +99,9 @@ class RedisSnapshotTests(unittest.TestCase):
                'VE_SKILL_NAME': 'volcengine-redis', 'VOLCENGINE_SAFETY_POLICY_ENABLED': 'true'}
         response = subprocess.CompletedProcess([], 0, json.dumps(page([])), '')
         with patch.dict(mod.os.environ, env, clear=True), patch.object(mod.subprocess, 'run', return_value=response) as run:
-            mod.ve_fetch('cn-test', 5)({'InstanceId': 'redis-test'})
+            mod.ve_fetch('cn-test', 5)({'InstanceId': 'redis-test', 'PageNumber': 1})
+            argv = run.call_args.args[0]
+            self.assertEqual(json.loads(argv[argv.index('--body')+1])['PageNumber'], 1)
             self.assertEqual(run.call_args.args[0][:3], ['ve', 'redis', 'DescribeDBInstances'])
             self.assertEqual(run.call_args.kwargs['env'], env)
             self.assertEqual(run.call_args.kwargs['stdin'], subprocess.DEVNULL)
